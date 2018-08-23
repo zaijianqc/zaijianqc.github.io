@@ -1,280 +1,91 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="author" content="Rain">
-  
-  
-  
-  
-    <meta name="description" content="Welcome to my blog!">
-  
-  <title> [ RAIN's BLOG ]</title>
-  
-  
-    <link rel="shortcut icon" href="/favicon.ico">
-  
-  
-  <link rel="stylesheet" href="/css/random.css">
-<link rel="stylesheet" href="/css/vegas.min.css">
-<link rel="stylesheet" href="/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/css/plyr.css">
+  <meta charset="utf-8">
+  <title>lyyourc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
   
 </head>
 
-<div class="random-center hide-area">
-  <div id="random-index">
-    <div class="center-field">
-      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120 onClick="openUserCard()">
-    </div>
-    <div class="center-field">
-      <div class="title" onClick="openUserCard()">RAIN's BLOG</div>
-      <div class="sub-title" onClick="openUserCard()"></div>
-    </div>
-    <hr >
-    <div class="center-field">
-      <ul class="index-nav-link">
-        
-        
-          
-            <li><a href="/index.html">Home</a></li>
-          
-        
-          
-            <li><a href="/archives">Archives</a></li>
-          
-        
-          
-            <li><a href="/tags">Tags</a></li>
-          
-        
-          
-            <li><a href="/categories">Categories</a></li>
-          
-        
-          
-            <li><a href="/about">About</a></li>
-          
-        
-          
-            <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
-          
-        
-      </ul>
-      <ul class="social-icon">
+<body>
+  <nav class="app-nav">
   
+    
+      <a class="active" href="/.">home</a>
+    
   
-    <li>
-      <a href="https://github.com/stiekel/hexo-theme-random">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
+    
+      <a href="/archives">archive</a>
+    
   
-    <li>
-      <a href="https://coding.net/u/Stiekel">
-        
-          <i class="icon iconfont coding">&#xe607;</i>
-        
-      </a>
-    </li>
+    
+      <a href="/atom.xml">rss</a>
+    
   
-    <li>
-      <a href="https://twitter.com/SidCN">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://weibo.com/sidcn">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/Stiekel/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-    </div>
-  </div>
-</div>
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
-    <p id="description">Welcome to my blog!</p>
-    <ul class="social-icon">
-  
-  
-    <li>
-      <a href="https://github.com/stiekel/hexo-theme-random">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://coding.net/u/Stiekel">
-        
-          <i class="icon iconfont coding">&#xe607;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://twitter.com/SidCN">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://weibo.com/sidcn">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/Stiekel/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-  </div>
-</div>
+</nav>
 
+  <header class="app-header">
+  <section class="banner">
+    <!-- http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/ -->
+    <div class="placeholder"></div>
+    <img
+      class="banner-small"
+      data-src="http://7xrcp8.com1.z0.glb.clouddn.com/banner-large.png"
+      src="http://7xrcp8.com1.z0.glb.clouddn.com/banner-small.png"
+      alt="banner"
+    >
+  </section>
 
-<div id="btn-view">Hide</div>
+  <section class="description">
+    <img class="avatar" src="http://7xrcp8.com1.z0.glb.clouddn.com/avatar.png" alt="avatar" />
+    <h1 class="title"> lyyourc </h1>
+    <h3 class="subtitle"> You Are The JavaScript In My HTML </h3>
+  </section>
 
-<script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
+  <ul class="social-list">
+    <a href="https://twitter.com/DrakeLeung">Twitter</a>
+    <a href="https://github.com/DrakeLeung">GitHub</a>
+    <a href="http://weibo.com/cha12chalyc">Weibo</a>
+  </ul>
+</header>
 
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
+<main class="index">
+  
+    <article>
+      <h1 class="article-title">
+        <a href="/2018/08/22/hello-world/">Hello World</a>
+      </h1>
 
-var isTriggerAnalytics = !( true && isIgnoreHost );
+      <div class="article-entry">
+        
+      </div>
 
-</script>
-
-
-
-
-  
-  
-    <script src="/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/js/vegas.min.js"></script>
-  
-    <script src="/js/random.js"></script>
-  
-    <script src="/js/highlight.pack.js"></script>
-  
-    <script src="/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/js/plyr.js"></script>
+      <div class="article-meta">
+        <span class="article-date">Aug 22 2018</span>
+      </div>
+    </article>
   
 
-<script>
+  <nav class="page-nav">
+  <span class="page-number current">1</span>
+</nav>
 
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
+</main>
 
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
+<footer class="app-footer">
+  <p>
+    Written by
+    <a href="https://github.com/DrakeLeung/hexo-theme-again">
+      Drake Leung
+    </a>
+  </p>
+  <p> Powered by <a href="https://hexo.io"> Hexo </a> <p>
+</footer>
 
+<script src="/js/app.js"></script>
 
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
-    }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
-</script>
 </body>
 </html>
-
